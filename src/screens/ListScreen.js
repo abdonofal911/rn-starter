@@ -7,7 +7,8 @@ const ListScreen = () => {
         {name : 'Kashory' ,age:"22" },
         {name :'Ga3ly' ,age:"22"},
         {name: 'Muaz', age:"22"},
-        {name: 'Safty', age:"22"}
+        {name: 'Safty', age:"22"},
+        {name: 'Aly', age:"24"}
     ]
   return (
     <FlatList 
@@ -20,7 +21,7 @@ const ListScreen = () => {
       
   )
 }
-const Styles = StyleSheet.create({
+const styles = StyleSheet.create({
     textStyle : {
         marginVertical:45 ,
         marginLeft:50 
