@@ -5,20 +5,21 @@ import { onChange } from 'react-native-reanimated';
 
 const TextScreen = () => {
 
-    const [ name , setName] = useState('')
+    const [ password , setPassword] = useState('')
   return (
     <View>
-    <Text > What's you name , sir ?</Text>
+    <Text > Hello, Password Please ?</Text>
     <TextInput 
     style={styles.input} 
     autoCapitalize="none"
     autoCorrect={false}
-    value={name}
-    onChangeText={(newValue)=> setName(newValue)}
-    
+    value={password}
+    onChangeText={(newValue)=> setPassword(newValue)}
+    secureTextEntry={true}    
     />
-      <Text style={styles.text}>
-      Hello There , Mr {name}</Text>
+
+    {password.length <5 ? <Text> Password must be more than 4 Characters</Text> : null}  
+
     </View>
   )
 }
