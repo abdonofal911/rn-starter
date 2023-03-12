@@ -34,7 +34,7 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate("Color")}
         title="Go to Color Screen"
       />
-    <Button
+      <Button
         style={styles.Button}
         onPress={() => navigation.navigate("Square")}
         title="Go to Square Screen"
@@ -49,7 +49,6 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate("Text")}
         title="Go to Text Screen"
       />
-
     </View>
   );
 };
@@ -60,7 +59,7 @@ const styles = StyleSheet.create({
   },
   Button: {
     marginVertical: 50,
-    padding : 20
+    padding: 20,
   },
 });
 

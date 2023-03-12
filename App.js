@@ -18,9 +18,9 @@ const navigator = createStackNavigator(
     Images: ImageScreen,
     Counter: CounterScreen,
     Color: ColorScreen,
-    Square : SquareScreen,
-    SquareR : SquareScreenReducer,
-    Text : TextScreen
+    Square: SquareScreen,
+    SquareR: SquareScreenReducer,
+    Text: TextScreen,
   },
   {
     initialRouteName: "Home",
