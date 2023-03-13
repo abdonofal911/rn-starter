@@ -49,6 +49,11 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => navigation.navigate("Text")}
         title="Go to Text Screen"
       />
+      <Button
+        style={styles.Button}
+        onPress={() => navigation.navigate("Box")}
+        title="Go to Box Screen"
+      />
     </View>
   );
 };
@@ -58,7 +63,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
   },
   Button: {
-    marginVertical: 50,
+    marginTop: 50,
     padding: 20,
   },
 });
